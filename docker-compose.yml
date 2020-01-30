@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  nginx:
+    image: alchemystudio/nginx-ssl-bidirection
+    restart: always
+    entrypoint: /root/entrypoint.sh
+    ports:
+      - 443:443
