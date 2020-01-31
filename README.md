@@ -12,6 +12,12 @@
 $ docker pull alchemystudio/nginx-ssl-bidirection
 ```
 
+## 手工编译容器
+
+```bash
+$ docker build --no-cache . 
+```
+
 ## 手工启动容器
 
 ```bash
