@@ -26,7 +26,7 @@ openssl req \
     -out ca.crt
 
 # 创建一个客户端证书，后续`curl`可以作为「客户端」使用起来
-openssl genrsa -out client.key 1024
+openssl genrsa -out client.key 4096
 # .csr证书和.crt证书里面的格式内容都是一样的，只不过`.csr`的扩展名一般代表这张证书准备签名
 openssl req -new -key client.key -out client.csr -subj "/C=CN/ST=Beijing/L=Beijing/O=Personal/CN=client"
 
