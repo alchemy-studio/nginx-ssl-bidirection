@@ -1,8 +1,6 @@
 # 基于nginx的「ssl双向握手」测试服务容器
 
-## 部署结构
-
-架构图：
+## 架构图
 
 ![](https://raw.githubusercontent.com/alchemy-studio/nginx-ssl-bidirection/master/arch.png)
 
@@ -48,4 +46,4 @@ $ docker-compose up
 
 ## 用到本容器的文章
 
-TODO
+* [HTTPS的双向认证（一）](http://weinan.io/2020/02/01/ssl.html)
