@@ -4,12 +4,18 @@
 
 架构图：
 
-「TODO」
+to add
 
 ## 下载image
 
 ```bash
 $ docker pull alchemystudio/nginx-ssl-bidirection
+```
+
+## 手工编译容器
+
+```bash
+$ docker build --no-cache . 
 ```
 
 ## 手工启动容器
@@ -27,7 +33,7 @@ root# nginx
 在host宿主访问服务：
 
 ```bash
-$ curl -k -v https://localhost
+$ curl --cacert /cert/server.crt --cert /cert/client.crt --key /cert/client.key https://localhost
 ```
 
 ## 自动启动容器和服务
