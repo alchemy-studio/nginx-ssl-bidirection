@@ -4,7 +4,7 @@
 
 架构图：
 
-to add
+![](https://raw.githubusercontent.com/alchemy-studio/nginx-ssl-bidirection/master/arch.png)
 
 ## 下载image
 
