@@ -60,6 +60,8 @@ $ docker cp nginx-ssl-bidirection_nginx_1:/cert/client.key .
 $ curl --cacert ./server.crt --cert ./client.crt --key ./client.key https://localhost
 ```
 
+![](https://raw.githubusercontent.com/alchemy-studio/nginx-ssl-bidirection/master/66981580629445_.pic_hd.jpg)
+
 ## 用到本容器的文章
 
 * [HTTPS的双向认证（一）](http://weinan.io/2020/02/01/ssl.html)
