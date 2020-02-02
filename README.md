@@ -44,6 +44,22 @@ $ docker-compose pull
 $ docker-compose up
 ```
 
+```bash
+$ docker cp nginx-ssl-bidirection_nginx_1:/cert/server.crt .
+```
+
+```bash
+$ docker cp nginx-ssl-bidirection_nginx_1:/cert/client.crt .
+```
+
+```bash
+$ docker cp nginx-ssl-bidirection_nginx_1:/cert/client.key .
+```
+
+```bash
+$ curl --cacert ./server.crt --cert ./client.crt --key ./client.key https://localhost
+```
+
 ## 用到本容器的文章
 
 * [HTTPS的双向认证（一）](http://weinan.io/2020/02/01/ssl.html)
