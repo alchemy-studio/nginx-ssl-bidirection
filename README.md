@@ -66,3 +66,6 @@ $ curl --cacert ./server.crt --cert ./client.crt --key ./client.key https://loca
 
 * [HTTPS的双向认证（一）](http://weinan.io/2020/02/01/ssl.html)
 * [HTTPS的双向认证（二）](http://weinan.io/2020/02/02/ssl.html)
+* [HTTPS的双向认证（三）](http://weinan.io/2020/02/04/ssl.html)
+
+
