@@ -41,6 +41,7 @@ rm -rf /cert/ca.srl
 cd /etc/nginx/
 sed -ie '/http {/r/root/nginx-ssl.conf' nginx.conf
 cat /etc/nginx/nginx.conf
+rm -rf /etc/nginx/nginx.confe
 
 mkdir -p /etc/nginx/html/localhost
 touch /etc/nginx/html/localhost/index.html
