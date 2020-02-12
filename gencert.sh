@@ -35,6 +35,9 @@ openssl x509 -req -days 360 -in client.csr -CA ca.crt -CAkey ca.key -CAcreateser
 
 chown -R nginx .
 
+# 不知道这个srl文件是怎么产生的
+rm -rf /cert/ca.srl
+
 cd /etc/nginx/
 sed -ie '/http {/r/root/nginx-ssl.conf' nginx.conf
 cat /etc/nginx/nginx.conf
